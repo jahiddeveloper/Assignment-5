@@ -256,4 +256,24 @@ function addToHistory(name, hotline) {
 }
 
 
+const copyPlassPlass = document.getElementById("plass");
+let copyCount = 0;
+
+const copyButtons = document.querySelectorAll(".copy-btn");
+
+for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener("click", function() {
+        
+      const hotline = this.parentElement.querySelector("p.font-bold").innerText;
+
+      navigator.clipboard.writeText(hotline).then(() => {
+      
+    });
+
+      copyCount++;
+      copyPlassPlass.innerText = copyCount;
+    });
+}
+
+
 
