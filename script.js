@@ -15,6 +15,7 @@ for(let i = 0; i < loveIcons.length; i++) {
 }
 
 
+const history = [];
 
 // Cart -1
 
@@ -26,11 +27,11 @@ document.getElementById("phone-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("সার্বজনীন \n 999")
+    alert("Calling National Emergency Service 999..")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -48,11 +49,11 @@ document.getElementById("p-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("পুলিশ \n 999")
+    alert("Calling Police 999")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -70,11 +71,11 @@ document.getElementById("h-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("ফায়ার সার্ভিস \n 999")
+    alert("Calling Fire Service 999")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -92,11 +93,11 @@ document.getElementById("o-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("অ্যাম্বুলেন্স \n 1994-999999")
+    alert("Calling Ambulance 1994-999999")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -114,11 +115,11 @@ document.getElementById("n-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("নারী ও শিশু সহায়তা \n 109")
+    alert("Calling Women & Child Helpline 109")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -136,11 +137,11 @@ document.getElementById("e-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("দুদক \n 106")
+    alert("Calling Anti-Corruption 106")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -158,11 +159,11 @@ document.getElementById("call-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("বিদ্যুৎ বিভ্রাট \n 16216")
+    alert("Callng Electricity Outage 16216")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -180,11 +181,11 @@ document.getElementById("mobile-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("ব্র্যাক \n 16445")
+    alert("Calling Brac 16445")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
@@ -202,14 +203,104 @@ document.getElementById("telephone-btn")
   const freeCoins = 20;
 
   if(coinsUncountInnerText > 0) {
-    alert("বাংলাদেশ রেলওয়ে \n 163")
+    alert("Calling Bangladesh Railway 163")
     
   }
   else {
-    alert("Bye everyOne")
+    alert("আপনার পর্যাপ্ত কয়েন নেই। কল করতে কমপক্ষে 20টি কয়েন লাগবে।")
     return
   }
   const totalcoins = coinsUncountInnerText - freeCoins;
 
   document.getElementById("uncount").innerText = totalcoins
 }) 
+
+
+
+// const div = document.createElement("div");
+//     div.classList.add("history-container");
+//     div.innerHTML = `<div id="history-container" class="flex justify-between items-center bg-[#fafafa] p-4 rounded-lg shadow-lg mt-2">
+                
+
+//                 <div>
+//                     <h1 class="text-[18px] font-semibold">জাতীয় জরুরি সেবা</h1>
+//                     <h3>999</h3>
+//                 </div>
+
+//                 <div>
+//                     <p>10:59:59 AM</p>
+//                 </div>
+
+
+//             </div>`;
+
+//     history.appendChild(div);
+
+
+
+
+
+const historyBox = document.getElementById("history");
+
+
+function addToHistory(name, hotline) {
+    const div = document.createElement("div");
+    div.classList.add("flex", "justify-between", "items-center", "bg-[#fafafa]", "p-2", "rounded-lg", "mt-3", "shadow-lg");
+
+    div.innerHTML = `
+        <div>
+            <h1 class="font-semibold">${name}</h1>
+            <h3>${hotline}</h3>
+        </div>
+        <div>
+            <p>${new Date().toLocaleTimeString()}</p>
+        </div>
+    `;
+
+    historyBox.appendChild(div)
+}
+
+
+document.getElementById("phone-btn").addEventListener("click", function() {
+    addToHistory("জাতীয় জরুরি সেবা", 999)
+});
+
+
+document.getElementById("p-btn").addEventListener("click", function() {
+  addToHistory("পুলিশ", 999);
+});
+
+
+document.getElementById("h-btn").addEventListener("click", function() {
+  addToHistory("ফায়ার সার্ভিস", 999);
+});
+
+
+document.getElementById("o-btn").addEventListener("click", function() {
+  addToHistory("অ্যাম্বুলেন্স", "1994-999999");
+});
+
+
+document.getElementById("n-btn").addEventListener("click", function() {
+  addToHistory("নারী ও শিশু সহায়তা", 109);
+});
+
+
+document.getElementById("e-btn").addEventListener("click", function() {
+  addToHistory("দুদক", 106);
+});
+
+
+document.getElementById("call-btn").addEventListener("click", function() {
+  addToHistory("বিদ্যুৎ বিভ্রাট", 16216);
+});
+
+
+document.getElementById("mobile-btn").addEventListener("click", function() {
+  addToHistory("ব্র্যাক", 16445);
+});
+
+
+document.getElementById("telephone-btn").addEventListener("click", function() {
+  addToHistory("বাংলাদেশ রেলওয়ে", 163);
+});
