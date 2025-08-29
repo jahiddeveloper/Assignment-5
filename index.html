@@ -10,6 +10,9 @@
     <!-- font-awesome-CDN -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+     <!-- daisyUi CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
     <!-- Font -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -39,7 +42,7 @@
                 </div>
 
                 <div class="flex justify-center items-center mr-5 w-[123px] h-[52px] bg-[#41ff6b1a] rounded-full">
-                    <p class="font-extrabold mr-1.5">100</p>
+                    <p id="uncount" class="font-extrabold mr-1.5">100</p>
                     <img class="h-[24px] w-[24px]" src="./assets/coin.png" alt="">
                 </div>
                 
@@ -64,10 +67,10 @@
 
 
     <main class="px-15">
-        <div class="flex">
-            <div class="grid grid-cols-3 gap-7 mt-12 w-3/4">
+        <div class="flex md:flex-col lg:flex-row gap-7 mt-12">
+            <div class="grid md:grid-cols-1 lg:grid-cols-3 gap-7 w-3/4">
 
-            <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+            <div class="bg-white w-full p-6 lg:max-w-lg rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -80,12 +83,12 @@
             <p class="mt-6 font-bold text-[32px] leading-9">999</p>
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">সার্বজনীন</p>
             <br>
-            <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular "></i> Copy</button>
+            <button id="phone-btn" class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#dfefff] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/police.png" alt="">
@@ -99,11 +102,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">পুলিশ</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="p-btn" class=" ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/fire-service.png" alt="">
@@ -117,11 +120,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">ফায়ার</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="h-btn" class=" ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/ambulance.png" alt="">
@@ -135,11 +138,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">স্বাস্থ্য</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="o-btn" class=" ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -153,11 +156,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">সহায়তা</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="n-btn" class="  ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -171,11 +174,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">সরকারি</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="e-btn" class="  ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -189,11 +192,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">বিদ্যুৎ</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="call-btn" class=" ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -207,11 +210,11 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">এনজিও</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="mobile-btn" class=" ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
 
 
-        <div class="bg-white w-[437px] p-8 rounded-2xl shadow-lg">
+        <div class="bg-white w-full p-6 rounded-2xl shadow-lg">
             <div class="flex justify-between items-center">
                 <div class="p-3.5 bg-[#ffe3e2] w-[60px] rounded-2xl">
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" alt="">
@@ -225,12 +228,19 @@
             <p class="py-1.5 px-4 bg-[#f2f2f2] inline-block rounded-2xl text-[#5c5c5c]">পরিবহন</p>
             <br>
             <button class="border-2 border-[#d4d6d5] h-[40px] w-[182px] rounded-xl mt-6"><i class="fa-regular fa-copy"></i> Copy</button>
-            <button class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+            <button id="telephone-btn" class="ml-1 h-[40px] w-[182px] text-white bg-[#00a63e] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
         </div>
         </div>
 
-        <div class="1/4">
-            <h1>history</h1>
+        <div class="1/4 h-[120vh] w-[400px] bg-white p-6 rounded-2xl shadow-lg">
+            <div class="flex justify-between items-center">
+                <div>
+                <h1 class="text-[1.25rem] font-bold"><i class="fa-solid fa-clock-rotate-left"></i> history</h1>
+            </div>
+            <div>
+                <button class="w-[127px] h-[52px] bg-[#00a63e] text-white rounded-full ">Clear</button>
+            </div>
+            </div>
         </div>
         </div>
     </main>
